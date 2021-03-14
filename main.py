@@ -16,7 +16,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
 #help
     if message.content.startswith('$help'):
-        await message.channel.send('http://megastudios.69.mu/discord/help.png')
+        await message.channel.send('http://megastudios.69.mu/discord/help2.png')
         await message.channel.send('For more help')
         await message.channel.send('ask hammyouboi#6969')
 #rickroll
