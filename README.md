@@ -1,6 +1,6 @@
 # wearybot
 a discord bot with random-ass commands and is the sexiest bot in the world (based off my gf)
-also had a minecraft skin and classicube skin grabber 
+also had a minecraft skin and classicube skin grabber coming soon
 
 
 # How to setup
