@@ -14,6 +14,6 @@ to do that you do pip install discord.py
 
 4. Last of all you type in python main.py in the directory of main.py or run the batch script I provided that does step 2 for you
 
-#KEEP IN MIND
+# KEEP IN MIND
 Not everything has been added yet.
 this bot used to be running off of discord.bat but then I decided to switch to discord.py because of all my current problems that I faced
