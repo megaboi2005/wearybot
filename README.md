@@ -17,4 +17,3 @@ to do that you do pip install discord.py
 # KEEP IN MIND
 Not everything has been added yet.
 this bot used to be running off of discord.bat but then I decided to switch to discord.py because of all the current problems I faced
- test
