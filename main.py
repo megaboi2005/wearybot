@@ -27,23 +27,47 @@ async def on_message(message):
         await message.author.dm_channel.send('h')
 #nayfen
     if message.content.startswith('nayfen'):
-        await message.channel.send('is super seggsy')
+        await message.channel.send('em')
 #em
     if message.content.startswith('em'):
-        await message.channel.send('is super seggsy')
+        await message.channel.send('Nayfen')
+#balls
+    if message.content.startswith('$balls'):
+        await message.channel.send('BALLS')
+#sendnudes
+    if message.content.startswith('$sendnudes'):
+        await message.channel.send('Nayfen :weary:')
+#baka
+    if message.content.startswith('$baka'):
+        await message.channel.send('You are such a baka https://i.imgur.com/kgFp2gm.png')
+#cheat
+    if message.content.startswith('$cheat'):
+        await message.channel.send('Not you cheating on me :worried:')
+#watchaeating
+    if message.content.startswith('$watcha eating'):
+        await message.channel.send('Guys I’m eating a burger rn')
+#canIhaveIt
+    if message.content.startswith('$can I have it'):
+        await message.channel.send('Sure Bestie')
+#useggsy
+    if message.content.startswith('$u seggsy'):
+        await message.channel.send('no u')
+#heybestie
+    if message.content.startswith('$hey bestie'):
+        await message.channel.send('Hey bestie!!!!')
 
 @client.event
-#async def on_ready():
-    #await client.change_presence(
-        #activity=discord.Streaming(name='seggsy girl plays dbd', url='https://www.twitch.tv/eemmahamlet'))
-
-    #print('Connected to bot: {}'.format(client.user.name))
-    #print('Bot ID: {}'.format(client.user.id))
-
-
 async def on_ready():
-    await client.change_presence(activity=discord.Game('Dead by daylight'))
+    await client.change_presence(
+        activity=discord.Streaming(name='seggsy girl plays dbd', url='https://www.twitch.tv/eemmahamlet'))
 
     print('Connected to bot: {}'.format(client.user.name))
     print('Bot ID: {}'.format(client.user.id))
-client.run('token')
+
+
+#async def on_ready():
+    #await client.change_presence(activity=discord.Game('Dead by daylight'))
+
+    #print('Connected to bot: {}'.format(client.user.name))
+    #print('Bot ID: {}'.format(client.user.id))
+client.run('NzA2NDY3MDc1ODk5NjU0MTU1.Xq6qvA.OU1Z_5_Ce3PrP6MTsDf8Umsokys')
