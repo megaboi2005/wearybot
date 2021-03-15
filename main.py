@@ -70,4 +70,4 @@ async def on_ready():
 
     #print('Connected to bot: {}'.format(client.user.name))
     #print('Bot ID: {}'.format(client.user.id))
-client.run('NzA2NDY3MDc1ODk5NjU0MTU1.Xq6qvA.OU1Z_5_Ce3PrP6MTsDf8Umsokys')
+client.run('token')
