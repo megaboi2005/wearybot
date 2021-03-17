@@ -1,7 +1,18 @@
 import discord
+from discord.ext import commands
 import os
 
 client = discord.Client()
+client = commands.Bot(command_prefix = '$')
+@client.command()
+async def ping():
+    await client.say('Pong!')
+@client.command()
+async def echo(*args):
+    output = ''
+    for word in args:
+        output =+ word
+        output += ' '
 
 @client.event
 async def on_ready():
@@ -55,7 +66,14 @@ async def on_message(message):
 #heybestie
     if message.content.startswith('$hey bestie'):
         await message.channel.send('Hey bestie!!!!')
-
+#marioirl
+    if message.content.startswith('marioirl'):
+        await message.channel.send('https://cdn.discordapp.com/attachments/554704777548791829/821184817106386964/video0.mp4')
+#icpoopy
+    if message.content.startswith('I see poopy'):
+        await message.channel.send('https://media.discordapp.net/attachments/725836813872267275/795444244088750150/poopy.gif?width=374&height=288')
+    if message.content.startswith('i see poopy'):
+        await message.channel.send('https://media.discordapp.net/attachments/725836813872267275/795444244088750150/poopy.gif?width=374&height=288')
 @client.event
 async def on_ready():
     await client.change_presence(
@@ -70,4 +88,6 @@ async def on_ready():
 
     #print('Connected to bot: {}'.format(client.user.name))
     #print('Bot ID: {}'.format(client.user.id))
+
+
 client.run('token')
