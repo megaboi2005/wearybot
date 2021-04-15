@@ -47,6 +47,7 @@ async def on_message(message):
             embedVar.add_field(name="$rickroll", value="this command will never give you up nor let you down",inline=False)
             embedVar.add_field(name="$8ball", value="Predicts the future :OOOOO",inline=False)
             embedVar.add_field(name="$rolldice", value="roll sum die", inline=False)
+            embedVar.add_field(name="$action", value="commit warcrimes on another user [somewhat nsfw]", inline=False)
             await message.channel.send(embed=embedVar)
         if output == '2':
             embedVar = discord.Embed(title="WearyHelp", description="If you have any questions ask megaboi#6969", color=0x00ff00)
@@ -55,6 +56,7 @@ async def on_message(message):
             embedVar.add_field(name="$subtract num1 num2", value="subtracts numbers", inline=False)
             embedVar.add_field(name="$multiply num1 num2", value="multiplies the amount of gfs you've had times 0",inline=False)
             embedVar.add_field(name="$divide num1 num2", value="divides stuff",inline=False)
+            embedVar.add_field(name="$equation num1 +/-///*/ num2", value="all in one math command", inline=False)
             await message.channel.send(embed=embedVar)
 
 #rickroll
@@ -152,6 +154,7 @@ async def on_message(message):
         await message.channel.send('- colton')
 #randomnumber
     if message.content.startswith('$rolldice'):
+
         numbers = ["1", "2", "3", "4", "5", "6"]
         picked = random.choice(numbers)
         await message.channel.send('you rolled and got a '+ picked)
@@ -204,7 +207,7 @@ async def on_message(message):
         await message.channel.send('lol jk')
 #args test
     if message.content.startswith('$echo'):
-        output = message.content.split(' ')[2-1]
+        output = message.content.replace('$echo', '')
         await message.channel.send(output)
 #add
     if message.content.startswith('$add'):
@@ -342,7 +345,12 @@ async def on_message(message):
                 await message.channel.send(output3)
         except IndexError:
             await message.channel.send('Syntax error - $equation num1 +/-/*/ / / num2')
-
+#action
+    if message.content.startswith('$action'):
+        output = message.content.replace('$action', '')
+        action = ["Kicked","Killed","Punched","Ticked","Scratched","Licked","ran from","bullied","sat on","threw lima beans at","cried about","gulped down a cow in front of","murdered","Grappled onto","saw and ran to","kissed","skinned","ate","almost did it with","yanked","walked into","saw","twisted","pulverized","sucked all the bone marrow out of","wrote on","skipped over","jumped on","reverantly touched","stepped on","brushed","gave Covid-19 to","hushed","reached lower on","rejected","proposed","traded there life to","spat rice out onto","threw yellow pigs at","traded his money for spoons to","sat onto","threw clothes","is in love with"]
+        action2 = random.choice(action)
+        await message.channel.send(message.author.mention +' ' + action2 + output)
 
 
 
