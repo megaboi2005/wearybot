@@ -350,6 +350,9 @@ async def on_message(message):
         output = message.content.replace('$action', '')
         action = ["Kicked","Killed","Punched","Ticked","Scratched","Licked","ran from","bullied","sat on","threw lima beans at","cried about","gulped down a cow in front of","murdered","Grappled onto","saw and ran to","kissed","skinned","ate","almost did it with","yanked","walked into","saw","twisted","pulverized","sucked all the bone marrow out of","wrote on","skipped over","jumped on","reverantly touched","stepped on","brushed","gave Covid-19 to","hushed","reached lower on","rejected","proposed","traded there life to","spat rice out onto","threw yellow pigs at","traded his money for spoons to","sat onto","threw clothes","is in love with"]
         action2 = random.choice(action)
+        if output == '':
+            await message.channel.send('bruh theres no word smh')
+            return
         await message.channel.send(message.author.mention +' ' + action2 + output)
 
 
